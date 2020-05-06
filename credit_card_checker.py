@@ -3,11 +3,11 @@ while True:
     while True:
         try:
             number = int(input("Enter your credit card number: "))
-        except ValueError:
-            print("Error: Only numbers are accepted. Please Try again.\n")
+        except:
+            print("Input error: letters or special characters are not accepted. Please Try again.\n")
             continue
         if number < 0:
-            print("Error: Only numbers are accepted. Please Try again.\n")
+            print("Input error: letters or special characters are not accepted. Please Try again.\n")
             continue
         
         else:
